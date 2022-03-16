@@ -24,6 +24,6 @@ io.on("connection",  (socket) => {
 
 
 server.listen(PORT, () => {
-  loggerConsole.info(`Server running on http://localhost:${PORT}`);
+  loggerConsole.info(`Server running on ${PORT}`);
 });
 server.on('error', error => loggerError.error(`Error en servidor: ${error}`));
